@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         id="WebApp_ID"
+         version="4.0">
+
+    <display-name>DemoApp</display-name>
+
+    <servlet>
+        <servlet-name>AddServelet</servlet-name>
+        <servlet-class>FirstServelet.AddServelet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddServelet</servlet-name>
+        <url-pattern>/add</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GetMethod</servlet-name>
+        <servlet-class>postAndGet.GetMethod</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>GetMethod</servlet-name>
+        <url-pattern>/addition1</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>PostMethod</servlet-name>
+        <servlet-class>postAndGet.PostMethod</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PostMethod</servlet-name>
+        <url-pattern>/addition2</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Add</servlet-name>
+        <servlet-class>RequestDispatcher.Addition</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Add</servlet-name>
+        <url-pattern>/reqDis</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Sqre</servlet-name>
+        <servlet-class>RequestDispatcher.Square</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Sqre</servlet-name>
+        <url-pattern>/sq</url-pattern>
+    </servlet-mapping>
+    
+
+</web-app>
