@@ -57,5 +57,25 @@
         <url-pattern>/sq</url-pattern>
     </servlet-mapping>
     
+     <servlet>
+        <servlet-name>Sum</servlet-name>
+        <servlet-class>SendRedirect.Addition</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Sum</servlet-name>
+        <url-pattern>/sendRe</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Square</servlet-name>
+        <servlet-class>SendRedirect.Square</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Square</servlet-name>
+        <url-pattern>/sqr</url-pattern>
+    </servlet-mapping>
+    
 
 </web-app>
